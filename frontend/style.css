@@ -1,68 +1,63 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-  background: linear-gradient(135deg, #f2f6fc, #e6ecf5);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+  background: #f4f6f9;
+  color: #222;
+  padding: 20px;
 }
 
 header {
-  background: #2c3e50;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
   text-align: center;
-  padding: 20px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  margin: 0;
+  font-size: 28px;
+  margin-bottom: 8px;
 }
 
 header p {
-  margin-top: 5px;
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #news-container {
   max-width: 900px;
-  margin: 30px auto;
-  padding: 0 15px;
+  margin: auto;
 }
 
 .news-card {
   background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .news-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .news-card h3 {
-  margin: 0 0 10px;
-  color: #1f2d3d;
-  font-size: 20px;
-}
-
-.news-card .date {
-  font-size: 13px;
-  color: #888;
   margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .news-card a {
-  display: inline-block;
-  margin-bottom: 12px;
-  color: #1a73e8;
+  color: #1e3c72;
   text-decoration: none;
   font-weight: 500;
 }
@@ -71,45 +66,49 @@ header p {
   text-decoration: underline;
 }
 
-.news-card button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background: #ff4d4d;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
+.news-card .date {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 8px;
 }
 
-.news-card button:hover {
-  background: #e60000;
+.news-card .actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-btn {
+  background: #ff4757;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.like-btn:hover {
+  background: #e84118;
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .pagination button {
-  padding: 8px 18px;
-  border: none;
-  border-radius: 6px;
-  background: #2c3e50;
+  background: #333;
   color: white;
+  border: none;
+  padding: 8px 18px;
+  margin: 0 6px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-.pagination button:disabled {
-  background: #aaa;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #2c3e50;
-  color: white;
-  font-size: 14px;
+.pagination button:hover {
+  background: #555;
 }
