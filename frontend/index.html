@@ -11,19 +11,33 @@
 <body>
 
   <header>
-    <h1>Gaza Aid News Platform</h1>
-    <p>Mohamed Rani Mohamed Abu Saada – Islamic University of Gaza</p>
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="logo.png" alt="logo" class="logo">
+        <div>
+          <h1>Gaza Aid News Platform</h1>
+          <p>Mohamed Rani Mohamed Abu Saada – Islamic University of Gaza</p>
+        </div>
+      </div>
+
+      <button id="theme-toggle">🌙 Dark</button>
+    </div>
   </header>
 
   <main id="news-container"></main>
 
   <div class="pagination">
     <button id="prev">Previous</button>
-    <span id="page-number"></span>
+    <span id="page-number">1</span>
     <button id="next">Next</button>
   </div>
 
+  <footer>
+    <p>© 2026 - Software Development Frameworks Project</p>
+  </footer>
+
   <script src="script.js"></script>
+
 </body>
 
 </html>
